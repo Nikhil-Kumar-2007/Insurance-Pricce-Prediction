@@ -44,7 +44,7 @@ if page == "Prediction Page":
                   columns=['age','sex','bmi','children','smoker','region'])
         result = model.predict(user_input)
         st.subheader("Output")
-        st.success(result.item())
+        st.success(round(result.item(), 2))
 
 
 # =====================================================
